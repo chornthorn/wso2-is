@@ -1,6 +1,6 @@
 <?php
 
-namespace SocialiteProviders\Auth0;
+namespace SocialiteProviders\wso2is;
 
 use GuzzleHttp\RequestOptions;
 use Illuminate\Support\Arr;
