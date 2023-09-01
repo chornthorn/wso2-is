@@ -1,7 +1,12 @@
-# Auth0
+# WSO2 Identity Server for Laravel Socialite
+
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/chornthorn/wso2-is.svg?style=flat-square)](https://packagist.org/packages/chornthorn/wso2-is)
+[![GitHub issues-closed](https://img.shields.io/github/issues-closed/chornthorn/wso2-is.svg?style=flat-square)]()
+[![Total Downloads](https://img.shields.io/packagist/dt/chornthorn/wso2-is.svg?style=flat-square)](https://packagist.org/packages/chornthorn/wso2-is)
+
 
 ```bash
-composer require chornthorn/wso2is
+composer require chornthorn/wso2-is
 ```
 
 ## Installation & Basic Usage
