@@ -24,12 +24,15 @@ Please see the [Base Installation Guide](https://socialiteproviders.com/usage/),
 ],
 ```
 
-### Add base URL to `.env`
+### Add configuration to `.env`
 
-Auth0 may require you to autorize against a custom URL, which you may provide as the base URL.
+Login to your WSO2 Identity Server and create a new OAuth2 application. And then add the following configuration to your `.env` file.
 
-```bash
-AUTH0_BASE_URL=https://account.yourbackend.com/
+```dotenv
+WSO2IS_CLIENT_ID=your-client-id
+WSO2IS_CLIENT_SECRET=your-client-secret
+WSO2IS_REDIRECT_URI=https://your-callback-url
+WSO2IS_BASE_URL=https://your-identity-server.com/oauth2
 ```
 
 ### Add provider event listener
@@ -42,7 +45,7 @@ Add the event to your `listen[]` array in `app/Providers/EventServiceProvider`. 
 protected $listen = [
     \SocialiteProviders\Manager\SocialiteWasCalled::class => [
         // ... other providers
-        \SocialiteProviders\wso2is\Wso2ExtendSocialite::class.'@handle',
+         \Chornthorn\Wso2Is\Wso2IsExtendSocialite::class . '@handle',
     ],
 ];
 ```
