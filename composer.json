@@ -1,9 +1,10 @@
 {
     "name": "chornthorn/wso2-is",
-    "description": "WSO2 OAuth2 Provider for Laravel Socialite",
+    "description": "WSO2 Identity Server OAuth2 Provider for Laravel Socialite",
     "license": "MIT",
     "keywords": [
-        "wso2",
+        "WSO2 Identity Server",
+        "WSO2 API Manager",
         "laravel",
         "oauth",
         "provider",
@@ -18,7 +19,7 @@
     "support": {
         "issues": "https://github.com/socialiteproviders/providers/issues",
         "source": "https://github.com/socialiteproviders/providers",
-        "docs": "https://socialiteproviders.com/auth0"
+        "docs": "https://socialiteproviders.com/WSO2IS"
     },
     "require": {
         "php": "^8.0",
@@ -27,7 +28,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Chornthorn\\Wso2Is\\": ""
+            "SocialiteProviders\\WSO2IS\\": ""
         }
     }
 }
