@@ -1,6 +1,6 @@
 <?php
 
-namespace chornthorn\wso2is;
+namespace Chornthorn\Wso2Is;
 
 use GuzzleHttp\RequestOptions;
 use Illuminate\Support\Arr;
