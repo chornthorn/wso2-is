@@ -45,7 +45,7 @@ Add the event to your `listen[]` array in `app/Providers/EventServiceProvider`. 
 protected $listen = [
     \SocialiteProviders\Manager\SocialiteWasCalled::class => [
         // ... other providers
-         \Chornthorn\Wso2Is\Wso2IsExtendSocialite::class . '@handle',
+         \SocialiteProviders\WSO2IS\Wso2IsExtendSocialite::class . '@handle',
     ],
 ];
 ```
