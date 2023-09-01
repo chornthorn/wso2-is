@@ -48,7 +48,7 @@ class Provider extends AbstractProvider
      */
     protected function getTokenUrl()
     {
-        return $this->getWso2IsUrl() . '/oauth2/token';
+        return $this->getWso2IsUrl() . '/token';
     }
 
     /**
@@ -56,7 +56,7 @@ class Provider extends AbstractProvider
      */
     protected function getUserByToken($token)
     {
-        $response = $this->getHttpClient()->get($this->getWso2IsUrl() . '/oauth2/userinfo', [
+        $response = $this->getHttpClient()->get($this->getWso2IsUrl() . '/userinfo', [
             RequestOptions::HEADERS => [
                 'Authorization' => 'Bearer ' . $token,
             ],
