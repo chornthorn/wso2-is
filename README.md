@@ -1,7 +1,7 @@
 # Auth0
 
 ```bash
-composer require chornthorn/wso2is
+composer require chornthorn/wso2-is
 ```
 
 ## Installation & Basic Usage
