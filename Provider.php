@@ -1,6 +1,6 @@
 <?php
 
-namespace SocialiteProviders\wso2is;
+namespace chornthorn\wso2is;
 
 use GuzzleHttp\RequestOptions;
 use Illuminate\Support\Arr;
